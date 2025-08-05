@@ -9,7 +9,11 @@ const router = useRouter()
 </script>
 
 <template>
-  <TrafficLightTimer />
+  <v-container id="main">
+    <div class="content-wrapper">
+      <TrafficLightTimer />
+    </div>
+  </v-container>
 </template>
 
 
@@ -18,40 +22,7 @@ const router = useRouter()
   max-width: 1200px;
   margin: 0 auto;
   padding: 32px 16px;
-  padding-bottom: 80px; /* добавили здесь отступ */
+  padding-bottom: 40px;
 }
 
-.hero-section {
-  background-color: #ffffff;
-  color: #2c1e4a;
-  background-image: url("@/assets/contactFormBG.png");
-  max-width: 1200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  object-fit: cover;
-
-  min-height: 450px;
-  height: auto;
-}
-
-
-
-.hero-title {
-  font-size: 48px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.hero-subtitle {
-  font-size: 20px;
-  color: #3d3d3d;
-  margin-top: 16px;
-}
-
-.hero-image {
-  max-width: 100%;
-  height: auto;
-}
 </style>

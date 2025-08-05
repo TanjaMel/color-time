@@ -6,12 +6,13 @@ const route = useRoute()
 <template>
   <v-app-bar app flat class="header-section py-2">
     <v-container class="d-flex justify-space-between align-center">
-      <!-- Логотип и название -->
-      <div class="d-flex align-center">
-        <img src="@/assets/logo.png" alt="Logo" height="80" class="mr-2" />
-      </div>
+      <!-- Logo with link to homepage -->
+      <router-link to="/" class="d-flex align-center" style="text-decoration: none;">
+        <img src="@/assets/logo.png" alt="Logo" height="80" style="cursor: pointer;" />
+      </router-link>
 
-      <!-- Навигация -->
+      <!-- Navigation -->
+      <div class="d-flex align-end">
       <router-link to="/whyus">
         <v-btn variant="plain">Why Us</v-btn>
       </router-link>
@@ -19,6 +20,7 @@ const route = useRoute()
       <router-link to="/contact">
         <v-btn variant="plain">Contact</v-btn>
       </router-link>
+      </div>
     </v-container>
   </v-app-bar>
 </template>

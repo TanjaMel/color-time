@@ -1,3 +1,5 @@
+
+
 <template>
   <v-footer class="footer-section" padless>
     <v-container>
@@ -12,9 +14,15 @@
         <v-col cols="6" md="3">
           <h4 class="footer-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact-us">Contact</a></li>
+            <li>
+              <router-link to="/">Home</router-link>
+            </li>
+            <li>
+              <router-link to="/whyus">Why Us</router-link>
+            </li>
+            <li>
+              <router-link to="/contact">Contact</router-link>
+            </li>
           </ul>
         </v-col>
 
