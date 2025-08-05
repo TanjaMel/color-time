@@ -1,19 +1,15 @@
 <script setup>
 import AppHeader from "@/components/AppHeader.vue"
 import TrafficLightTimer from '@/components/TrafficLightTimer.vue'
+
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
-function goToTimer() {
-  router.push('/timer')
-}
 </script>
 
 <template>
-  <AppHeader />
   <TrafficLightTimer />
-
 </template>
 
 

@@ -1,4 +1,7 @@
 <script setup>
+import {useRoute} from 'vue-router';
+
+const route = useRoute()
 </script>
 
 <template>
@@ -49,18 +52,18 @@
 }
 
 .why-us-title {
-font-size: 32px;
-font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .why-us-heading {
-font-size: 20px;
-font-weight: 600;
-margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .why-us-subtitle {
-font-size: 16px;
-color: #4e4e4e;
+  font-size: 16px;
+  color: #4e4e4e;
 }
 </style>

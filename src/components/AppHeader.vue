@@ -1,14 +1,7 @@
 <script setup>
+import {useRoute} from 'vue-router';
 
-const scrollTo = (id) => {
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
-  }
-};
+const route = useRoute()
 </script>
 <template>
   <v-app-bar app flat class="header-section py-2">
@@ -19,17 +12,13 @@ const scrollTo = (id) => {
       </div>
 
       <!-- Навигация -->
-          <div class="d-flex">
-            <v-btn @click="scrollTo('why-us')" variant="plain">
-              Why Us
-            </v-btn>
-            <v-btn @click="scrollTo('about-us')" variant="plain">
-              About The App
-            </v-btn>
-            <v-btn @click="scrollTo('contact-us')" variant="plain">
-              Contact
-            </v-btn>
-          </div>
+      <router-link to="/whyus">
+        <v-btn variant="plain">Why Us</v-btn>
+      </router-link>
+
+      <router-link to="/contact">
+        <v-btn variant="plain">Contact</v-btn>
+      </router-link>
     </v-container>
   </v-app-bar>
 </template>
